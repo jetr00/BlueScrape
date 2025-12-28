@@ -14,11 +14,11 @@ Before running the program, ensure you have the following installed on your syst
 Follow these steps exactly to get the environment ready:
 
 ### 1. Clone the repository
-```bash
+bash:
 git clone git@github.com:jetr00/BlueScrape.git
-cd BlueScrape```
+cd BlueScrape
 
-2. Configure API Keys
+### 2. Configure API Keys
 
 The application requires a News API key to function. For security reasons, this key is kept in a separate folder.
 
@@ -27,15 +27,15 @@ The application requires a News API key to function. For security reasons, this 
 
     mkdir apis
 
-    Create the key file: Inside the apis folder, create a file named keys.py (or .env, depending on your script's logic).
+    Create the key file: Inside the apis folder, create a file named apis.env.
 
     Add your API key: Open the file and add your key in the following format:
     
     NEWS_API_KEY="your_api_key_here"
 
-3. Install Dependencies
+### 3. Install Dependencies
 
-If there is a requirements.txt file, install the necessary libraries:
+There is a requirements.txt file, install the necessary libraries:
 Bash
 
 pip install -r requirements.txt
@@ -47,7 +47,7 @@ Bash
 
 python3 main.py
 
-Built With
+### Built With
 
     Python - The core programming language.
 
@@ -55,6 +55,6 @@ Built With
 
     NewsAPI - Used for fetching data.
 
-Author
+### Author
 
     jetr00 - GitHub Profile
