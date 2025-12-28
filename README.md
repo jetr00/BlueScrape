@@ -51,8 +51,6 @@ python3 main.py
 
     Python - The core programming language.
 
-    BeautifulSoup/Selenium - (Add your specific scraping tools here).
-
     NewsAPI - Used for fetching data.
 
 ### Author
