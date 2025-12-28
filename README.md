@@ -3,7 +3,7 @@ BlueScrape is a Python-based tool designed to scrape and aggregate data efficien
 ## 📋 Prerequisites
 
 Before running the program, ensure you have the following installed on your system:
-* Python 3.x
+* Python 3.13.5
 * Git
 * Pip (Python package manager)
 
