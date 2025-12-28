@@ -1,0 +1,13 @@
+# Ignore the virtual environment (too huge)
+.venv/
+venv/
+env/
+
+# Ignore the secrets (CRITICAL)
+*.env
+**/*.env
+apis/apis.env
+__pycache__/
+*.db
+*.h5
+.DS_Store
