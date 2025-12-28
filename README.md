@@ -57,4 +57,4 @@ python3 main.py
 
 ### Author
 
-    jetr00 - GitHub Profile
+    jetr00 - John Choriatellis
