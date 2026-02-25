@@ -1,4 +1,6 @@
-BlueScrape is a Python-based tool designed to scrape and aggregate data efficiently. This project uses external APIs to fetch information and process it locally.
+# 📈 BlueScrape: Market Intelligence & AI Sentiment Engine
+
+BlueScrape is a Python-based tool designed to scrape and aggregate data efficiently. This project uses external APIs to fetch information and process it locally. An end-to-end data pipeline that fetches real-time financial news, filters out noise using advanced BM25 ranking, and analyzes market sentiment using a fine-tuned NLP model (FinBERT). 
 
 ## 📋 Prerequisites
 
@@ -8,8 +10,6 @@ Before running the program, ensure you have the following installed on your syst
 * Pip (Python package manager)
 
 ---
-
-An end-to-end data pipeline that fetches real-time financial news, filters out noise using advanced BM25 ranking, and analyzes market sentiment using a fine-tuned NLP model (FinBERT). 
 
 ## 🚀 Architecture Overview
 
@@ -27,6 +27,7 @@ This system is built as a modular, production-ready backend intelligence engine:
 * **Database:** SQLite3 (with automated schema initialization)
 
 ## 📁 Project Structure
+
 ```text
 BlueScrape/
 ├── Database/
@@ -43,45 +44,45 @@ BlueScrape/
 ├── .gitignore           # Security and cache shielding
 └── requirements.txt     # Project dependencies
 
-⚙️ How to Run Locally
-1. Clone the repository
-Bash
+## ⚙️ How to Run Locally
 
+### 1. Clone the repository
+```bash
 git clone git@github.com:jetr00/BlueScrape.git
 cd BlueScrape
 
-2. Install Dependencies
+### 2. Install Dependencies
 
 It is recommended to use a virtual environment.
-Bash
+```bash
 
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 
-3. Environment Variables
+## 3. Environment Variables
 
 Create a .env file in the root directory and add your API credentials:
-Code snippet
+
+```Code snippet
 
 NEWS_API_KEY=your_actual_api_key_here
 
-4. Run the Pipeline
-Bash
+## 4. Run the Pipeline
+```bash
 
 python Main/main.py
 
 Upon running, the engine will automatically initialize the database, fetch market news, run the AI sentiment analysis, and securely save the intelligence to BLUESCRAPE.db.
-```
 
-###🧠 Technical Highlights
+## 🧠 Technical Highlights
 
-    Singleton AI Loading: Prevented memory-leaks and multiprocessing crashes by implementing a Singleton design pattern for the Hugging Face pipeline.
+* Singleton AI Loading: Prevented memory-leaks and multiprocessing crashes by implementing a Singleton design pattern for the Hugging Face pipeline.
 
-    Environment Gatekeeping: Used Pydantic to strictly validate configuration settings before runtime, preventing system crashes due to missing or malformed keys.
+* Environment Gatekeeping: Used Pydantic to strictly validate configuration settings before runtime, preventing system crashes due to missing or malformed keys.
 
-    Database Normalization: Designed a multi-table relational schema ensuring referential integrity between companies, articles, and sentiment_analysis.
+* Database Normalization: Designed a multi-table relational schema ensuring referential integrity between companies, articles, and sentiment_analysis.
 
-###✒️ Author
+## ✒️ Author
 
-    jetr00 - John Choriatellis
+jetr00 - John Choriatellis
