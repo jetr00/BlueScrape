@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Database and AI Models
+*.db
+*.sqlite3
+bm_model.h5
+
+# Python Caches & Virtual Environments
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
