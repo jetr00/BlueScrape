@@ -72,6 +72,7 @@ Bash
 python Main/main.py
 
 Upon running, the engine will automatically initialize the database, fetch market news, run the AI sentiment analysis, and securely save the intelligence to BLUESCRAPE.db.
+```
 
 🧠 Technical Highlights
 
