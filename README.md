@@ -74,7 +74,7 @@ python Main/main.py
 Upon running, the engine will automatically initialize the database, fetch market news, run the AI sentiment analysis, and securely save the intelligence to BLUESCRAPE.db.
 ```
 
-🧠 Technical Highlights
+###🧠 Technical Highlights
 
     Singleton AI Loading: Prevented memory-leaks and multiprocessing crashes by implementing a Singleton design pattern for the Hugging Face pipeline.
 
@@ -82,6 +82,6 @@ Upon running, the engine will automatically initialize the database, fetch marke
 
     Database Normalization: Designed a multi-table relational schema ensuring referential integrity between companies, articles, and sentiment_analysis.
 
-### Author
+###✒️ Author
 
     jetr00 - John Choriatellis
