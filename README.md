@@ -43,6 +43,7 @@ BlueScrape/
 ├── .env                 # API Keys (Ignored by Git)
 ├── .gitignore           # Security and cache shielding
 └── requirements.txt     # Project dependencies
+```
 
 ## ⚙️ How to Run Locally
 
@@ -50,39 +51,37 @@ BlueScrape/
 ```bash
 git clone git@github.com:jetr00/BlueScrape.git
 cd BlueScrape
+```
 
 ### 2. Install Dependencies
 
 It is recommended to use a virtual environment.
 ```bash
-
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-## 3. Environment Variables
+### 3. Environment Variables
 
-Create a .env file in the root directory and add your API credentials:
+Create a `.env` file in the root directory and add your API credentials:
 
-```Code snippet
-
+```env
 NEWS_API_KEY=your_actual_api_key_here
+```
 
-## 4. Run the Pipeline
+### 4. Run the Pipeline
 ```bash
-
 python Main/main.py
-
-Upon running, the engine will automatically initialize the database, fetch market news, run the AI sentiment analysis, and securely save the intelligence to BLUESCRAPE.db.
+```
+*Upon running, the engine will automatically initialize the database, fetch market news, run the AI sentiment analysis, and securely save the intelligence to `BLUESCRAPE.db`.*
 
 ## 🧠 Technical Highlights
 
-* Singleton AI Loading: Prevented memory-leaks and multiprocessing crashes by implementing a Singleton design pattern for the Hugging Face pipeline.
-
-* Environment Gatekeeping: Used Pydantic to strictly validate configuration settings before runtime, preventing system crashes due to missing or malformed keys.
-
-* Database Normalization: Designed a multi-table relational schema ensuring referential integrity between companies, articles, and sentiment_analysis.
+* **Singleton AI Loading:** Prevented memory-leaks and multiprocessing crashes by implementing a Singleton design pattern for the Hugging Face pipeline.
+* **Environment Gatekeeping:** Used Pydantic to strictly validate configuration settings before runtime, preventing system crashes due to missing or malformed keys.
+* **Database Normalization:** Designed a multi-table relational schema ensuring referential integrity between companies, articles, and sentiment_analysis.
 
 ## ✒️ Author
 
-jetr00 - John Choriatellis
+**jetr00 - John Choriatellis**
