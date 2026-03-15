@@ -11,14 +11,12 @@ import json
 
 api = get_settings()
 
-def apis():
+def apis(comp):
     nak = api.news_api_key
     url = 'https://newsapi.org/v2/everything'
 
     queries = {
-        'AAPL': 'apple AND (business OR stock OR finance OR revenue)',
-        'NVDA': 'nvidia AND (business OR stock OR finance OR revenue)',
-        'AMD': 'amd AND (business OR stock OR finance OR revenue)'
+        comp : f'{comp} AND (business OR stock OR finance OR revenue)'
     }
 
     all_articles = []
